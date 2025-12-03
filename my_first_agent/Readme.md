@@ -11,7 +11,7 @@
 [Google starter for Agent documentation](https://google.github.io/adk-docs/get-started/python/)
 
 ---
-# Execution logs
+# Execution logs and instructions
 - The API key might not work, as they are deleted after creation of first agent.
 
 ---
@@ -62,4 +62,16 @@ adk create my_agent
         2. Vertex AI
     3. Enter Google API Key:
         1. "Enter your API key"
+
+- To run the agent on web for easier readability and understandability use , press "ctrl+c" to quit
+```bash
+adk web --port 8000
+``` 
+- The following are initialized automatically:
+    1. __init__.py  # for managing the file as package allowing to import different modules and functions
+    2. .env         # file for managing the api key
+    3. agent.py     # this is the actual agent(Just like a person) --> has model(brain),name(person name), description(capability of a person), instruction(task to perform), tools(just like all person, like hammer for carpenter). This is the root agent on which whole agentic ai starts with or an entry point
+
+    *We can create tools(functions, search engine, other tools too) for the LLM to access*
+
 
