@@ -88,5 +88,14 @@ adk web --port 8000
     *We can create tools(functions, search engine, other tools too) for the LLM to access*
 
 The First agent is done now!
----
 
+---
+## Attention details
+- While writing a function in agentic AI always write a docstring --> this enables the agent to know when and how to use the function.
+    - It would be better if the docstring is in the framework of COPI (Context/purpose, expected Output, Process, Inputs taken in)
+    - def get_user_name() -> dict:   # **mentioning dict is very essential**
+    - In current ADK version, **the custom tool and in-built can not be used simultaneously**
+    - **Currently 1 agent == 1 in builtin tool**
+
+### How to utilize the custom and builtin tools simultaneously
+- Utilize AgentTool imported from google.adk.tools.agent_tool
