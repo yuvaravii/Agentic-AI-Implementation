@@ -1,6 +1,19 @@
 # Description 
 - Creating my first agent using google ADK (agent development kit)
 
+# Definitions
+1. What is ADK?
+- ADK is a pythonic framework, that can be utilized to create agents, these are utilized to create applications that are **powered by LLMs**.
+
+- Tools: These are functions, search engines, applications etc. that helps to efficiently complete the objective like fetching the data, writing the data etc..
+- Auto-flow: delegating the objective with clear instruction and effective communication. 
+- session state: Memory of the agent
+- ToolContext: Instruction about the tools and its capability.
+
+2. What is safety guardrails ?
+- These are essential pre-defined instruction to restrain the LLM from leaking the information or hallucination or any other inherent drawbacks. 
+
+
 ---
 # Requirements 
 'google-adk',
@@ -74,4 +87,6 @@ adk web --port 8000
 
     *We can create tools(functions, search engine, other tools too) for the LLM to access*
 
+The First agent is done now!
+---
 
